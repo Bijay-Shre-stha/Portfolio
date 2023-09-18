@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:ital,wght@1,700&family=Poppins:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',Inter, sans-serif;
+}
+:root{
+  --primary-color: #ffffff;
+  --secondary-color: #f9f9f9;
+  --dark-color: #333333;
+}
