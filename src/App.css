@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:ital,wght@1,700&family=Poppins:wght@500&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:ital,wght@1,700&family=Poppins:wght@300;500&display=swap');
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins',Inter, sans-serif;
+  font-family: 'Poppins', Inter, sans-serif;
 }
-:root{
+
+:root {
   --primary-color: #ffffff;
   --secondary-color: #f9f9f9;
   --dark-color: #333333;
+  --hover-color: #ff1717;
 }
 
 ::-webkit-scrollbar {
@@ -17,17 +20,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
   border-radius: 6px;
 }
-
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
-

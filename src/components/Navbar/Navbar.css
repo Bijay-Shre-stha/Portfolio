@@ -1,0 +1,28 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    border-radius:0 0 0.5rem 0.5rem;
+}
+
+.navbar-brand .navbar__logo {
+    width: 100px;
+}
+
+.navbar__logo img {
+    width: 100%;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.nav-item .nav-link {
+    margin: 0 0.5rem;
+}
+
+.nav-item .nav-link:hover {
+    color: var(--hover-color);
+}
