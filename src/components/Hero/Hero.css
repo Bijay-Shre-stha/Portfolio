@@ -1,5 +1,3 @@
-/* Hero.css */
-
 .home {
     margin-top: 75px;
 }
@@ -77,5 +75,5 @@
 }
 
 .footer__icon:hover {
-    color:var(--hover-color);
+    color: var(--hover-color);
 }

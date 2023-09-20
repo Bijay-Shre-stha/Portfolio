@@ -11,6 +11,8 @@ import developer from '../Images/technologist.png';
 import profile from '../Images/profile-modified.png';
 import learner from '../Images/learner.png';
 
+import Tech from '../Tech/Tech';
+
 const Hero = () => {
     const [showCursor, setShowCursor] = useState(true);
 
@@ -112,12 +114,13 @@ const Hero = () => {
                                     target="_blank"
                                     href="https://www.linkedin.com/in/bijay-shrestha-771b66225/"
                                 >
-                                    <LinkedInIcon className="footer__icon" style={{ fontSize: '40px',  }} />
+                                    <LinkedInIcon className="footer__icon" style={{ fontSize: '40px', }} />
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <Tech/>
             </div>
         </section>
     );
