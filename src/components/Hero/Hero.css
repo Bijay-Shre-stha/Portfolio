@@ -1,0 +1,81 @@
+/* Hero.css */
+
+.home {
+    margin-top: 75px;
+}
+
+.img__smaller {
+    width: 30px;
+    height: 30px;
+}
+
+.img__wave {
+    animation: shake 1s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-2px);
+    }
+
+    50% {
+        transform: translateX(2px);
+    }
+
+    75% {
+        transform: translateX(-2px);
+    }
+
+    100% {
+        transform: translateX(2px);
+    }
+}
+
+.image__container {
+    margin: auto;
+    text-align: center;
+}
+
+.profile__image {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.typewriter__text {
+    color: var(--hover-color);
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media screen and (max-width: 768px) {
+    .image__container {
+        float: none;
+    }
+
+    .col-md-6.order-2.order-md-1,
+    .col-md-6.order-1.order-md-2 {
+        text-align: center;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
+
+.footer__social {
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.footer__icon {
+    margin: 0 15px;
+    color: var(--dark-color);
+}
+
+.footer__icon:hover {
+    color:var(--hover-color);
+}
