@@ -32,3 +32,6 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.divider{
+  background-color: var(--secondary-color);
+}

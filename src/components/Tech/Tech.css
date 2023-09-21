@@ -1,6 +1,4 @@
-.divider{
-    background-color: var(--secondary-color);
-}
+
 .tech__holder {
     display: flex;
     justify-content: center;

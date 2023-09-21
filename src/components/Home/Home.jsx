@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import './Hero.css';
+import './Home.css';
 
 import smile from '../Images/smile.png';
 import wave from '../Images/wave.png';
@@ -11,7 +11,7 @@ import developer from '../Images/technologist.png';
 import profile from '../Images/profile-modified.png';
 import learner from '../Images/learner.png';
 
-const Hero = () => {
+const Home = () => {
     const [showCursor, setShowCursor] = useState(true);
 
     useEffect(() => {
@@ -123,4 +123,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default Home;
