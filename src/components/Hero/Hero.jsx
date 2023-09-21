@@ -11,8 +11,6 @@ import developer from '../Images/technologist.png';
 import profile from '../Images/profile-modified.png';
 import learner from '../Images/learner.png';
 
-import Tech from '../Tech/Tech';
-
 const Hero = () => {
     const [showCursor, setShowCursor] = useState(true);
 
@@ -120,7 +118,6 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <Tech/>
             </div>
         </section>
     );

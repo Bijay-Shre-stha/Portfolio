@@ -1,0 +1,39 @@
+.divider{
+    background-color: var(--secondary-color);
+}
+.tech__holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+
+.tech__icons {
+    margin: 15px;
+}
+
+.tech__stack {
+    font-weight: 100;
+}
+
+.icons:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.icons {
+    margin: 15px;
+    cursor: pointer;
+}
+
+.horizontal__line {
+    border: 2px solid var(--dark-color);
+    margin-top: 10px;
+}
+
+.align{
+    margin-left: 50px;
+}
