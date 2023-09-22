@@ -5,7 +5,7 @@ const Tech = () => {
         <div className="divider">
             <div className='container '>
                 <div className="tech__holder">
-                    <h1 className="tech__stack">Tech Stack</h1>
+                    <h1 className="heading ">Tech Stack</h1>
                 </div>
                 <hr className="horizontal__line" />
 

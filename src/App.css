@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', Inter, sans-serif;
   font-weight: 100;
+  letter-spacing: 2px;
 }
 
 :root {
@@ -32,6 +33,16 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-.divider{
+
+.divider {
   background-color: var(--secondary-color);
+}
+
+.heading {
+  font-weight: 100;
+}
+
+.horizontal__line {
+  border: 2px solid var(--dark-color);
+  margin-top: 10px;
 }
