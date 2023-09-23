@@ -32,7 +32,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col-md-6 order-2 order-md-1">
                         <div className="image__container">
-                            <img className="profile__image" src={profile} alt="" />
+                            <img className="img-fluid profile__image" src={profile} alt="" />
                         </div>
                     </div>
                     <div className="col-md-6 order-1 order-md-2">

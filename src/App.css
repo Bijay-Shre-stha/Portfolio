@@ -46,3 +46,7 @@
   border: 2px solid var(--dark-color);
   margin-top: 10px;
 }
+.highlight{
+  color: var(--hover-color);
+  font-weight: bold;
+}
