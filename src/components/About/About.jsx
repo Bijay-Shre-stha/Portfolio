@@ -10,7 +10,7 @@ const About = () => {
                     <hr className="horizontal__line" />
                 </div>
                 <div className="container">
-                    <div className="row">
+                    <div className="row align">
                         <div className="col-md-6 col-sm-12">
                             <h3 className='heading fw-bold mt-5'>A dedicated <span className='full__stack' >Full-Stack</span> Developer</h3>
                             <p className='about__text'>

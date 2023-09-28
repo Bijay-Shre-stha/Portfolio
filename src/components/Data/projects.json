@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "title": "TextCheck",
+        "description": "TextCheck is a web app for text enhancement, offering spelling checks, style improvements, word count tracking, translation, and more. It's user-friendly, integrates with popular tools, and ensures data privacy. Perfect for writers, students, and professionals seeking to enhance their text effortlessly.",
+        "githubLink": "https://github.com/Bijay-Shre-stha/TextCheck",
+        "websiteLink": "https://bijay-shre-stha.github.io/TextCheck/"
+    },
+    {
+        "id": 2,
+        "title": "ImageCheck",
+        "description": "ImageCheck is a web app for image enhancement, offering image editing, image resizing, image compression, and more. It's user-friendly, integrates with popular tools, and ensures data privacy. Perfect for designers, photographers, and professionals seeking to enhance their images effortlessly.",
+        "imageSrc": "path/to/ImageCheck.png",
+        "githubLink": "https://github.com/Bijay-Shre-stha/ImageCheck",
+        "websiteLink": "https://bijay-shre-stha.github.io/ImageCheck/"
+    }
+]
