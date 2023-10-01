@@ -7,7 +7,7 @@ import doko from '../Images/doko.png'
 
 const Project = () => {
     return (
-        <div className="">
+        <div className="projects" id="projects">
             <section className="project divider" id="project">
                 <div className="container">
                     <h1 className="heading">Projects</h1>
