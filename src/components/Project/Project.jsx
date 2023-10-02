@@ -13,7 +13,7 @@ const Project = () => {
                     <h1 className="heading">Projects</h1>
                     <hr className="horizontal__line" />
                 </div>
-                <span className='text'>
+                <span className='text'><br />
                     Each project is a unique piece of development 🧩
                 </span>
 

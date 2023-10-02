@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
+import  { useState, useEffect } from 'react';
 import './Navbar.css';
 import zero from '../Images/Zero.png';
 
-const MyNavbar = () => {
+const Navbar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
@@ -26,58 +25,54 @@ const MyNavbar = () => {
     };
 
     return (
-        <Navbar
-            collapseOnSelect
-            expand="lg"
-            bg={scrolled ? 'light' : 'transparent'}
-            variant="light"
-            className={scrolled ? 'scrolled' : ''}
-        >
+        <nav className={`navbar navbar-expand-lg navbar-light bg-light ${scrolled ? 'position-sticky' : ''}`}>
             <div className="container-fluid">
-                <Navbar.Brand href="/">
-                    <img className="navbar__logo" src={zero} alt="myLogo" />
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarSupportedContent" />
-                <Navbar.Collapse id="navbarSupportedContent">
-                    <Nav className="navbar-nav ml-auto ms-auto">
-                        <Nav.Item>
-                            <Nav.Link
-                                href="#home"
-                                className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
-                                onClick={() => onUpdateActiveLink('home')}
-                            >
+                <a href="/" className="navbar-brand">
+                    <img className='navbar__logo' src={zero} alt="myLogo" />
+                </a>
+                <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav ml-auto ms-auto">
+                        <li className="nav-item">
+                            <a className={`nav-link ${activeLink === 'home' ? 'active' : ''}`} href="#home" onClick={() => onUpdateActiveLink('home')}>
                                 Home
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
-                                onClick={() => onUpdateActiveLink('skills')}>
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className={`nav-link ${activeLink === 'skills' ? 'active' : ''}`} href="#skills" onClick={() => onUpdateActiveLink('skills')}>
                                 Skills
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="#about"  className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'}
-                                onClick={() => onUpdateActiveLink('about')}>
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className={`nav-link ${activeLink === 'about' ? 'active' : ''}`} href="#about" onClick={() => onUpdateActiveLink('about')}>
                                 About
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="#projects"  className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
-                                onClick={() => onUpdateActiveLink('projects')}>
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className={`nav-link ${activeLink === 'projects' ? 'active' : ''}`} href="#projects" onClick={() => onUpdateActiveLink('projects')}>
                                 Projects
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="#contact"  className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'}
-                                onClick={() => onUpdateActiveLink('contact')}>
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className={`nav-link ${activeLink === 'contact' ? 'active' : ''}`} href="#contact" onClick={() => onUpdateActiveLink('contact')}>
                                 Contact
-                            </Nav.Link>
-                        </Nav.Item>
-                    </Nav>
-                </Navbar.Collapse>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </Navbar>
+        </nav>
     );
 };
 
-export default MyNavbar;
+export default Navbar;
