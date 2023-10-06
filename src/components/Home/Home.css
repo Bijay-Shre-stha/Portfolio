@@ -1,7 +1,12 @@
 .home {
     padding-top: 115px;
     height: 100vh;
-    margin-bottom: -200px;
+}
+.hero__home{
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 .img__smaller {
@@ -91,7 +96,7 @@
 @media screen and (max-width: 576px) {
     .home {
         padding-top: 100px;
-        margin-bottom: -100px;
+        margin-bottom: -10px;
     }
 
     .image__container {

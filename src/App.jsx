@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import Tech from './components/Tech/Tech';
 import About from './components/About/About';
 import Project from './components/Project/Project';
+import Contact from './components/Contact/contact';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,6 +31,7 @@ function App() {
           <Tech />
           <About />
           <Project />
+          <Contact/>
         </>
       )}
     </div>

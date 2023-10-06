@@ -28,7 +28,7 @@ const Home = () => {
 
     return (
         <section className="home" id="home">
-            <div className="container">
+            <div className="container hero__home">
                 <div className="row">
                     <div className="col-md-6 order-2 order-md-1">
                         <div className="image__container">
