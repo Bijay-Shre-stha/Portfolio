@@ -8,6 +8,7 @@ import Tech from './components/Tech/Tech';
 import About from './components/About/About';
 import Project from './components/Project/Project';
 import Contact from './components/Contact/contact';
+import GetTouch from './components/GetTouch/GetTouch';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,6 +33,7 @@ function App() {
           <About />
           <Project />
           <Contact/>
+          <GetTouch/>
         </>
       )}
     </div>
