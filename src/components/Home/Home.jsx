@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import anime from 'animejs/lib/anime.es.js';
 import './Home.css';
 
 import smile from '../Images/smile.png';
@@ -15,14 +16,48 @@ const Home = () => {
     const [showCursor, setShowCursor] = useState(true);
 
     useEffect(() => {
-        // Use setTimeout to hide the cursor after Typewriter animation completes
-        const timeout = setTimeout(() => {
+        const animateElements = (targets, animationProps) => {
+            anime({
+                targets,
+                ...animationProps,
+            });
+        };
+
+        animateElements('.hero__home', {
+            scale: [0.75, 1],
+            opacity: [0, 1],
+            delay: 250,
+            duration: 2000,
+            easing: 'easeInOutSine',
+        });
+
+        animateElements('.image__container', {
+            translateX: [-100, 0],
+            opacity: [0, 1],
+            delay: 500,
+            duration: 2000,
+        });
+
+        const textAnimationProps = {
+            translateX: [100, 0],
+            opacity: [0, 1],
+            delay: 500,
+            duration: 2000,
+            easing: 'easeInOutQuad',
+        };
+
+        animateElements('.intro__text', textAnimationProps);
+        animateElements('.typewriter__text', textAnimationProps);
+        animateElements('.footer__social', textAnimationProps);
+    }, []);
+
+    useEffect(() => {
+        const cursorTimeout = setTimeout(() => {
             setShowCursor(false);
-        }, 5000); // Adjust the delay as needed
+        }, 5000);
 
         return () => {
-            // Cleanup the timeout to avoid memory leaks
-            clearTimeout(timeout);
+            clearTimeout(cursorTimeout);
         };
     }, []);
 
@@ -52,7 +87,6 @@ const Home = () => {
                                                 )
                                                 .start()
                                                 .callFunction(() => {
-                                                    // Use showCursor state to hide the cursor
                                                     if (showCursor) {
                                                         const cursor = document.querySelector(
                                                             '.Typewriter__cursor'
@@ -112,7 +146,7 @@ const Home = () => {
                                     target="_blank"
                                     href="https://www.linkedin.com/in/bijay-shrestha-771b66225/"
                                 >
-                                    <LinkedInIcon className="footer__icon" style={{ fontSize: '40px', }} />
+                                    <LinkedInIcon className="footer__icon" style={{ fontSize: '40px' }} />
                                 </a>
                             </div>
                         </div>

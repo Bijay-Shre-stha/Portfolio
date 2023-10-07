@@ -72,7 +72,7 @@
 /* Media query for screens smaller than 768px (typical tablets) */
 @media screen and (max-width: 768px) {
     .home {
-        padding-top: 110px;
+        padding-top: inherit;
     }
 
     .image__container {
@@ -95,15 +95,16 @@
 /* Media query for screens smaller than 576px (typical mobile devices) */
 @media screen and (max-width: 576px) {
     .home {
-        padding-top: 100px;
-        margin-bottom: -10px;
+        padding-top: inherit;
+        margin-bottom: -100px;
     }
 
     .image__container {
         text-align: center;
     }
-
+    
     .profile__image {
+        margin-top: 30px;
         width: 200px;
     }
 

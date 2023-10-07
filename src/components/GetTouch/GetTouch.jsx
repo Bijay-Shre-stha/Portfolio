@@ -60,8 +60,7 @@ const GetTouch = () => {
                 </div>
 
                 {/* <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                    <Button variant="contained" href="
-                    https://drive.google.com/file/d/1uN9mZl7XJg2tXH5KQlZJ6dZVj7VYqJZs/view?usp=sharing" target="_blank">
+                    <Button variant="contained" href=" https://drive.google.com/file/d/1LXAsdkC_dgZWklw35yEOK8K6KZaieJcA/view?usp=drive_link" target="_blank">
                         Download Resume
                     </Button>
                     </Box> */}
