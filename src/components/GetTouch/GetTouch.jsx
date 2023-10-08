@@ -22,7 +22,6 @@ const GetTouch = () => {
                         href="https://github.com/Bijay-Shre-stha">
                         <GitHubIcon className='get__icons' style={{ fontSize: '40px', }} />
                     </a>
-
                     <a className='text-decoration-none text-dark'
                         aria-label="github"
                         rel="noreferrer"
@@ -36,7 +35,8 @@ const GetTouch = () => {
                         target="_blank"
                         href="https://www.facebook.com/bijay.stha.3139">
                         <FacebookIcon className='get__icons' style={{ fontSize: '40px', }} />
-                    </a>                 <a className='text-decoration-none text-dark'
+                    </a>
+                    <a className='text-decoration-none text-dark'
                         aria-label="github"
                         rel="noreferrer"
                         target="_blank"
@@ -56,7 +56,7 @@ const GetTouch = () => {
                         target="_blank"
                         href="mailto: bijayshrestha0817@gmail.com">
                         <EmailIcon className='get__icons' style={{ fontSize: '40px', }} />
-                        </a>
+                    </a>
                 </div>
 
                 {/* <Box sx={{ display: 'flex', justifyContent: 'center' }}>
