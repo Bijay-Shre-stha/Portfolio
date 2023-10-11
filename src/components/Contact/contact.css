@@ -79,3 +79,9 @@ form textarea:focus {
     box-shadow: 0 0 10px 1px rgba(255, 3, 3, 0.15);
     transform: scale(1.02);
 }
+
+.map__container{
+    width: 100%;
+    height: 400px;
+    margin-top: 2rem;
+}
