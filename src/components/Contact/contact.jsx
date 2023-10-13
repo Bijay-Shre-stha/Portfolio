@@ -1,7 +1,18 @@
 import './contact.css';
 import contactImage from '../Images/contact-page.png';
+import { useState } from 'react';
 
 const Contact = () => {
+    const [data, setData] = useState({ username: '',email: '',phone: '', message: ''})
+    const handleInputChange = (e) => {
+        const { name, value } = e.target
+        setData({ ...data, [name]: value })
+    }
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(data)
+    }
+
     return (
         <div>
             <section className="contact" id="contact">
@@ -9,10 +20,10 @@ const Contact = () => {
                     <h1 className="heading">Contact Me</h1>
                     <hr className="horizontal__line" />
                     <iframe className='container map__container' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.676760282321!2d85.35418827519503!3d27.72726482461318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bdfa7513eb5%3A0xd4e8effaddd47036!2sSaraswatinagar%20Rd%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1696961972540!5m2!1sen!2snp"
-                    height="450"
-                    style={{ border: 0 }}
-                    allowFullScreen="" loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        height="450"
+                        style={{ border: 0 }}
+                        allowFullScreen="" loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"></iframe>
 
                     <div className="row image__form">
                         <div className="col-md-6">
@@ -23,24 +34,24 @@ const Contact = () => {
 
                         <div className="col-md-6">
                             <div className="form__container">
-                                <form action="" method="">
+                                <form action="" method="post">
                                     <div className="input__container">
                                         <label className="label" htmlFor="username">Username</label>
-                                        <input className="input__info" type="text" id="username" placeholder="Username" />
+                                        <input  type="text" name="username" id="username" placeholder="Username" onChange={handleInputChange} value={data.username} />
                                     </div>
                                     <div className="input__container">
                                         <label className="label" htmlFor="email">  Email </label>
-                                        <input type="email" id="email" placeholder="Email" />
+                                        <input type="email" id="email" name='email' placeholder="Email" onChange={handleInputChange} value={data.email} />
                                     </div>
                                     <div className="input__container">
                                         <label className="label" htmlFor="phone"> Phone </label>
-                                        <input type="text" id="phone" placeholder="Phone" />
+                                        <input type="text" id="phone" name='phone' placeholder="Phone" onChange={handleInputChange} value={data.phone} />
                                     </div>
                                     <div className="input__container">
                                         <label className="label" htmlFor="message"> Message </label>
-                                        <textarea name="message" id="message" placeholder="Enter your message" ></textarea>
+                                        <textarea name="message" id="message" placeholder="Enter your message" onChange={handleInputChange} value={data.message}></textarea>
                                     </div>
-                                    <button className="submit__button">Send</button>
+                                    <button className="submit__button" type='submit' onClick={handleSubmit}>Send</button>
                                 </form>
                             </div>
                         </div>

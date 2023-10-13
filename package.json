@@ -25,7 +25,8 @@
     "react-router-dom": "^6.16.0",
     "react-router-hash-link": "^2.4.3",
     "react-scroll": "^1.9.0",
-    "typewriter-effect": "^2.20.1"
+    "typewriter-effect": "^2.20.1",
+    "vite-plugin-require": "^1.1.11"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
