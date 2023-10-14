@@ -1,5 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import cors from 'cors'
 import {renderGetContact,  postContact } from './controller/pageController.js';
 
 const app = express();
@@ -8,6 +9,7 @@ const port = 3000;
 const mongooseURL = 'mongodb://127.0.0.1:27017/contact';
 
 app.use(express.json());
+app.use(cors())
 app.use(express.urlencoded({ extended: true }));
 
 const startServer = async () => {
@@ -24,8 +26,8 @@ const startServer = async () => {
 
 startServer();
 
-app.post('/contact',postContact);
 app.get('/', renderGetContact);
+app.post('/postContact',postContact);
 
 
 app.listen(port, () => {
