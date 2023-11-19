@@ -31,6 +31,7 @@ const Tech = () => {
                                         <h2>Backend</h2>
                                         <img className='icons' src="https://skillicons.dev/icons?i=nodejs" alt="nodejs logo" />
                                         <img className='icons' src="https://skillicons.dev/icons?i=express" alt="express logo" />
+                                        <img className='icons' src="https://skillicons.dev/icons?i=laravel" alt="laravel logo" />
                                         <img className='icons' src="https://skillicons.dev/icons?i=solidity" alt="solidity logo" />
                                     </div>
                                 </div>
