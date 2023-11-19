@@ -33,7 +33,7 @@ const GetTouch = () => {
                         aria-label="github"
                         rel="noreferrer"
                         target="_blank"
-                        href="https://www.facebook.com/bijay.stha.3139">
+                        href="https://www.facebook.com/bijay.shrestha.0817">
                         <FacebookIcon className='get__icons' style={{ fontSize: '40px', }} />
                     </a>
                     <a className='text-decoration-none text-dark'
