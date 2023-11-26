@@ -7,6 +7,7 @@
   font-family: 'Poppins', Inter, sans-serif;
   font-weight: 100;
   letter-spacing: 2px;
+  scroll-padding-top: 150px;
 }
 
 :root {
