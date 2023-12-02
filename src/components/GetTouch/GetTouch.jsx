@@ -23,35 +23,35 @@ const GetTouch = () => {
                         <GitHubIcon className='get__icons' style={{ fontSize: '40px', }} />
                     </a>
                     <a className='text-decoration-none text-dark'
-                        aria-label="github"
+                        aria-label="linkedin"
                         rel="noreferrer"
                         target="_blank"
-                        href="https://www.linkedin.com/in/bijay-shrestha-771b66225/">
+                        href="https://www.linkedin.com/in/bijayshrestha0817/">
                         <LinkedInIcon className='get__icons' style={{ fontSize: '40px', }} />
                     </a>
                     <a className='text-decoration-none text-dark'
-                        aria-label="github"
+                        aria-label="facebook"
                         rel="noreferrer"
                         target="_blank"
                         href="https://www.facebook.com/bijay.shrestha.0817">
                         <FacebookIcon className='get__icons' style={{ fontSize: '40px', }} />
                     </a>
                     <a className='text-decoration-none text-dark'
-                        aria-label="github"
+                        aria-label="instagram"
                         rel="noreferrer"
                         target="_blank"
-                        href="https://www.instagram.com/bijay_shrestha_0817/">
+                        href="https://www.instagram.com/bijay.shrestha.0817/">
                         <InstagramIcon className='get__icons' style={{ fontSize: '40px', }} />
                     </a>
                     <a className='text-decoration-none text-dark'
-                        aria-label="github"
+                        aria-label="twitter"
                         rel="noreferrer"
                         target="_blank"
-                        href="https://twitter.com/Bijay_Sh0817">
+                        href="https://twitter.com/bijay_stha_0817">
                         <TwitterIcon className='get__icons' style={{ fontSize: '40px', }} />
                     </a>
                     <a className='text-decoration-none text-dark'
-                        aria-label="github"
+                        aria-label="email"
                         rel="noreferrer"
                         target="_blank"
                         href="mailto: bijayshrestha0817@gmail.com">
