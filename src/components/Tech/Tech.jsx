@@ -21,8 +21,9 @@ const Tech = () => {
                                         <img className='icons' src="https://skillicons.dev/icons?i=css" alt="css3 logo" />
                                         <img className='icons' src="https://skillicons.dev/icons?i=js" alt="javascript logo" />
                                         <img className='icons' src="https://skillicons.dev/icons?i=react" alt="react logo" />
-                                        <img className='icons' src="https://skillicons.dev/icons?i=bootstrap" alt="bootstrap logo" />
+                                        <img className='icons' src="https://skillicons.dev/icons?i=nextjs" alt="next js logo" />
                                         <img className='icons' src="https://skillicons.dev/icons?i=tailwind" alt="tailwindcss logo" />
+                                        <img className='icons' src="https://skillicons.dev/icons?i=bootstrap" alt="bootstrap logo" />
                                         <img className='icons' src="https://skillicons.dev/icons?i=materialui" alt="materialui logo" />
                                     </div>
                                 </div>
